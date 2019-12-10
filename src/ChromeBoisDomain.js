@@ -11,20 +11,16 @@ export default class ChromeBoisDomain extends Component {
   };
 
   canvasHandler = () => {
-    toggleCycling()
-  }
- 
-  resizeHandler = (event) => {
-    if (event.key === 'a') {
-      resize('+')
-    } else if (event.key === 's') {
-      resize('-')
-    } 
-  }
-  /* provided `resize` function with a single argument of either '+' or '-'
-  /* if the key pressed was 'a', then it should call `resize` with '+'
-  /* if the key pressed was 's', then it should call `resize` with '-' 
-   */
+    toggleCycling();
+  };
+
+  resizeHandler = event => {
+    if (event.key === "a") {
+      resize("+");
+    } else if (event.key === "s") {
+      resize("-");
+    }
+  };
 
   render() {
     return (
